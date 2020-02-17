@@ -18,7 +18,9 @@ public class SlideSession {
     public void send(Object object)
     {
         try {
-            session.getBasicRemote().sendObject(object);
+            if(object!=null) {
+                session.getBasicRemote().sendObject(object);
+            }
         } catch (IOException e) {
             e.printStackTrace();
         } catch (EncodeException e) {

@@ -15,7 +15,7 @@ public class SlideDecoder implements Decoder.Text<Slide> {
     @Override
     public boolean willDecode(String s) {
         //TODO Tester la classe de la valeur : JSON ou non?
-        boolean done = false;
+        boolean done = true;
         /*try{
             decode(s);
             done=true;
