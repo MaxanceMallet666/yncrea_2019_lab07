@@ -1,5 +1,8 @@
 package yncrea.lab07.web.utils;
 
+import yncrea.lab07.web.data.SlideSession;
+import yncrea.lab07.web.dto.Slide;
+
 import javax.websocket.Session;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;

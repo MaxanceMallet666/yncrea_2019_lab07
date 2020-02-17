@@ -1,7 +1,15 @@
 package yncrea.lab07.web.controller;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import yncrea.lab07.web.dto.Slide;
+import yncrea.lab07.web.transformation.SlideDecoder;
+import yncrea.lab07.web.transformation.SlideEncoder;
+import yncrea.lab07.web.utils.CurrentSlideHolder;
 import yncrea.lab07.web.utils.SessionManager;
 
+import javax.websocket.*;
+import javax.websocket.server.ServerEndpoint;
 import java.io.IOException;
 
 @ServerEndpoint(
